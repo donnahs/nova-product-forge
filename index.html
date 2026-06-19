@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NOVA Product Forge</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <p class="eyebrow">NOVA / HermesForge OS</p>
+      <h1>Product Forge</h1>
+      <p>Ranks what Matt should build next, links fast-cash products to bigger SaaS paths, and keeps NOVA focused on shipping.</p>
+    </header>
+
+    <section class="next-card" id="nextBuild"></section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Ranked cards</p>
+          <h2>Build queue</h2>
+        </div>
+        <button id="copyPacket">Copy NOVA context packet</button>
+      </div>
+      <div id="cards" class="cards"></div>
+    </section>
+
+    <section class="panel">
+      <p class="eyebrow">Manual improvement loop</p>
+      <h2>Session notes analyser</h2>
+      <textarea id="sessionNotes" placeholder="Paste a messy session, product idea, or failure note here..."></textarea>
+      <button id="analyseNotes">Analyse notes</button>
+      <pre id="analysisOutput">Paste notes to generate a simple context/improvement packet.</pre>
+    </section>
+  </main>
+  <script src="product_forge.logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
